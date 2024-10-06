@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:background="@color/gris_oscuro">
+
+        <!-- Imagen del logo del taller -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_taller"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:background="@color/gris_oscuro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombres"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Ingrese sus nombres"
+                android:layout_marginTop="-10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:background="@color/gris_oscuro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="5dp"/>
+            <EditText
+                android:id="@+id/etApellido"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Ingrese sus apellidos"
+                android:layout_marginTop="-10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:background="@color/gris_oscuro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cedula"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/etCedula"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Ingrese su cedula"
+                android:layout_marginTop="-10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:background="@color/gris_oscuro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/etFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Ingrese fecha de nacimiento"
+                android:focusable="false"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:background="@color/gris_oscuro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rol"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/etRol"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Seleccione el Rol"
+                android:layout_marginTop="-10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:background="@color/gris_oscuro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre de usuario"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Ingrese nombre de usuario"
+                android:layout_marginTop="-10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:background="@color/gris_oscuro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contraseña"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/etContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Ingrese su contraseña"
+                android:layout_marginTop="-10dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:background="@color/verde"
+            android:textColor="@color/black"
+            android:layout_margin="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SidtemaFacturacionInventario</string>
+
+    <string-array name="opciones_rol">
+        <item>Administrador</item>
+        <item>Mecánico</item>
+        <item>Vendedor</item>
+    </string-array>
+</resources>
